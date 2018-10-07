@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="20dp"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Responder cuestionario"
+		android:textSize="23sp"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Acepto"
+			android:textSize="25sp"
+			android:layout_marginRight="40dp"/>
+
+		<Switch
+			android:checked="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/sw"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Su edad"
+		android:textSize="20sp"
+		android:textColor="#FC0E00"/>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_height="wrap_content"
+		android:id="@+id/edad"
+		android:inputType="number"
+		android:hint="Debe ser mayor de 0"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Lugares que ha visitado"
+		android:textSize="20sp"/>
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/c1"
+		android:text="En México"/>
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="América"
+		android:id="@+id/c2"/>
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Europa"
+		android:id="@+id/c3"/>
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Asia"
+		android:id="@+id/c4"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Estado civil"
+		android:textSize="20sp"/>
+
+	<RadioGroup
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/radio">
+
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Casado"
+			android:id="@+id/r1"/>
+
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Soltero"
+			android:id="@+id/r2"/>
+
+	</RadioGroup>
+
+	<Button
+		android:id="@+id/btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Aceptar"
+		android:onClick="aceptar"/>
+
+</LinearLayout>
+
